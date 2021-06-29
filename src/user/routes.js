@@ -1,11 +1,8 @@
 const express = require('express');
 const User = require('../../models/user');
 const connectToDatabase = require('../../db');
-const { route } = require('..');
 
-const routes = express.Router({
-    mergeParams: true
-});
+const routes = express.Router({ mergeParams: true });
 
 // getAll
 routes.get('/', async (req, res) => {
